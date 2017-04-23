@@ -23,5 +23,5 @@
         <activity android:name=".SpeechActivity" />
         <activity android:name=".AboutActivity"></activity>
     </application>
-
+    <uses-permission android:name="android.permission.VIBRATE" />
 </manifest>
