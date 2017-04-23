@@ -62,6 +62,9 @@ public class CalculatorActivity extends MainActivity {
         if (display == "") return;
         Button b = (Button) v;
 
+        Vibrator vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(50);
+
         if (result != ""){
             String _display = result;
             clear();
@@ -97,6 +100,9 @@ public class CalculatorActivity extends MainActivity {
     public void onClickClear (View v){
         clear();
         updateScreen();
+
+        Vibrator vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(50);
     }
 
     //    О П Е Р А Т О Р Ы
@@ -113,6 +119,7 @@ public class CalculatorActivity extends MainActivity {
             }
             default: return -1;
         }
+
     }
 
     //    Р Е З У Л Ь Т А Т
@@ -129,6 +136,7 @@ public class CalculatorActivity extends MainActivity {
         if (display == "") return;
         if (!getResult()) return;
         _screen.setText(display + "\n" + String.valueOf(result));
+
     }
 
 
