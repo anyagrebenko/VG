@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -119,29 +121,35 @@ public class SpeechActivity extends MainActivity {
         }.parse();
     }
 
-
-    public void onActivityResult(int request_code , int result_code, Intent i){
+    public void onActivityResult(int request_code , int result_code, Intent i) {
         super.onActivityResult(request_code , result_code , i);
 
-        switch (request_code){
-            case 100: if(result_code == RESULT_OK && i != null){
-                ArrayList<String> result = i.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                String s = result.get(0);
-                s = s.replaceAll("на", "");
-                s = s.replaceAll("к", "");
-                s = s.replaceAll("умножить", "x");
-                s = s.replaceAll("разделить", "/");
-                s = s.replaceAll("делить", "/");
-                s = s.replaceAll("отнять", "-");
-                s = s.replaceAll("прибавить", "+");
-                s = s.replaceAll("сложить", "+");
-                s = s.replaceAll("вычесть", "-");
+            switch (request_code) {
+                case 100:
+                        if (result_code == RESULT_OK && i != null) {
+                            try{
+                            ArrayList<String> result = i.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                            String s = result.get(0);
+                            s = s.replaceAll("на", "");
+                            s = s.replaceAll("к", "");
+                            s = s.replaceAll("умножить", "x");
+                            s = s.replaceAll("разделить", "/");
+                            s = s.replaceAll("делить", "/");
+                            s = s.replaceAll("отнять", "-");
+                            s = s.replaceAll("прибавить", "+");
+                            s = s.replaceAll("сложить", "+");
+                            s = s.replaceAll("вычесть", "-");
 
-                resultTEXT.setText(s + " = " + eval(s) + "");
-//                resultTEXT.setText(s);
+                            resultTEXT.setText(s + " = " + eval(s) + "");
+                            throw new IOException();
+                            } catch (IOException e) {
+                                Toast toast = Toast.makeText(getApplicationContext(), "ERROR! Try Again.", Toast.LENGTH_SHORT);
+                                toast.show();
+                            }
+                        }
+                    break;
+
             }
-                break;
         }
-    }
 }
 
