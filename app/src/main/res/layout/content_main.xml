@@ -9,7 +9,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.user.vg.MainActivity"
     tools:showIn="@layout/activity_calculator"
-    android:background="#4F1240"
+    android:background="#D3D8DA"
     android:padding="0dp">
 
     <TextView

@@ -2,10 +2,10 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.user.vg.AboutActivity"
-    android:background="#B5AEB3"
+    android:background="#D3D8DA"
     >
 
     <TextView

@@ -2,18 +2,14 @@ package com.example.user.vg;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
-import android.os.Bundle;
 import android.speech.RecognizerIntent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Locale;
-
-/**
- * Created by user on 07.04.2017.
- */
 
 public class SpeechActivity extends MainActivity {
 
@@ -132,15 +128,20 @@ public class SpeechActivity extends MainActivity {
                 ArrayList<String> result = i.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                 String s = result.get(0);
                 s = s.replaceAll("на", "");
+                s = s.replaceAll("к", "");
                 s = s.replaceAll("умножить", "x");
-                s = s.replaceAll("разделить", "÷");
+                s = s.replaceAll("разделить", "/");
+                s = s.replaceAll("делить", "/");
                 s = s.replaceAll("отнять", "-");
+                s = s.replaceAll("прибавить", "+");
+                s = s.replaceAll("сложить", "+");
                 s = s.replaceAll("вычесть", "-");
 
                 resultTEXT.setText(s + " = " + eval(s) + "");
 //                resultTEXT.setText(s);
             }
-            break;
+                break;
         }
     }
 }
+

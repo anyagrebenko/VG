@@ -8,31 +8,32 @@
     >
 
     <Button
-        android:text="Go!"
+        android:text="Normal"
         android:gravity="center"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:textSize="55dp"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:textSize="40dp"
         android:textStyle="bold"
         android:textColor="#6b6369"
         android:background="#d3d7db"
         android:id="@+id/btngo"
         android:layout_gravity="center"
         android:onClick="OnGo"
+        android:layout_marginTop="185dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="162dp" />
+        android:layout_alignStart="@+id/btngo2" />
 
     <Button
         android:id="@+id/btngo2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
         android:textColor="#6b6369"
         android:background="#d3d7db"
         android:textStyle="bold"
         android:onClick="OnBtn"
-        android:text="Speak"
-        android:textSize="18dp"
+        android:text="Voices"
+        android:textSize="40dp"
         android:layout_marginTop="13dp"
         android:layout_below="@+id/btngo"
         android:layout_centerHorizontal="true" />
@@ -41,14 +42,16 @@
         android:id="@+id/btngo3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:textColor="#6b6369"
         android:background="#d3d7db"
         android:textStyle="bold"
         android:onClick="OnAbout"
         android:text="About"
-        android:textSize="18dp"
+        android:textSize="20dp"
         android:layout_below="@+id/btngo2"
-        android:layout_alignStart="@+id/btngo2"
-        android:layout_marginTop="12dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp" />
+
 
 </RelativeLayout>
