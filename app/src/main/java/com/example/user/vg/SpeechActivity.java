@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -131,13 +129,13 @@ public class SpeechActivity extends MainActivity {
                             String s = result.get(0);
                             s = s.replaceAll("на", "");
                             s = s.replaceAll("к", "");
-                            s = s.replaceAll("умножить", "x");
                             s = s.replaceAll("разделить", "/");
                             s = s.replaceAll("делить", "/");
                             s = s.replaceAll("отнять", "-");
                             s = s.replaceAll("прибавить", "+");
                             s = s.replaceAll("сложить", "+");
                             s = s.replaceAll("вычесть", "-");
+                            s = s.replaceAll("умножить", "*");
 
                             resultTEXT.setText(s + " = " + eval(s) + "");
 //                            throw new IOException();
