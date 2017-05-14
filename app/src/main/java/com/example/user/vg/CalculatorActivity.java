@@ -40,8 +40,6 @@ public class CalculatorActivity extends MainActivity {
         Button b = (Button) v;
         display += b.getText();
         updateScreen();
-//        Vibrator vibrator = (Vibrator) this.context.getSystemService(Context.VIBRATOR_SERVICE);
-//        vibrator.vibrate(50);
     }
 
     //    О П Е Р А Т О Р Ы
@@ -139,29 +137,4 @@ public class CalculatorActivity extends MainActivity {
 
     }
 
-
-//    @Override
-//    public void onClick(View v) {
-//        switch (v.getId()){
-//            case R.id.btn0:
-//            case R.id.btn1:
-//            case R.id.btn2:
-//            case R.id.btn3:
-//            case R.id.btn4:
-//            case R.id.btn5:
-//            case R.id.btn6:
-//            case R.id.btn7:
-//            case R.id.btn8:
-//            case R.id.btn9:
-//            case R.id.btnPlus:
-//            case R.id.btnMinus:
-//            case R.id.btnClear:
-//            case R.id.btnMult:
-//            case R.id.btnDiv:
-//            case R.id.btnEqual:
-//                vibrator = (Vibrator) getSystemService (VIBRATOR_SERVICE);
-//                vibrator.vibrate(50);
-//                break;
-//        }
-//    }
 }

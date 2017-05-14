@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
@@ -127,7 +126,7 @@ public class SpeechActivity extends MainActivity {
             switch (request_code) {
                 case 100:
                         if (result_code == RESULT_OK && i != null) {
-                            try{
+//                            try{
                             ArrayList<String> result = i.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                             String s = result.get(0);
                             s = s.replaceAll("на", "");
@@ -141,11 +140,11 @@ public class SpeechActivity extends MainActivity {
                             s = s.replaceAll("вычесть", "-");
 
                             resultTEXT.setText(s + " = " + eval(s) + "");
-                            throw new IOException();
-                            } catch (IOException e) {
-                                Toast toast = Toast.makeText(getApplicationContext(), "ERROR! Try Again.", Toast.LENGTH_SHORT);
-                                toast.show();
-                            }
+//                            throw new IOException();
+//                            } catch (IOException e) {
+//                                Toast toast = Toast.makeText(getApplicationContext(), "ERROR! Try Again.", Toast.LENGTH_SHORT);
+//                                toast.show();
+//                            }
                         }
                     break;
 
