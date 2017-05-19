@@ -143,7 +143,6 @@ public class SpeechActivity extends MainActivity {
                         } catch (Exception e) {
                             Toast toast = Toast.makeText(getApplicationContext(), "ERROR! Try Again.", Toast.LENGTH_SHORT);
                             toast.show();
-//                            }
                         }
                         break;
 
