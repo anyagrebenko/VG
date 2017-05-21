@@ -2,6 +2,7 @@ package com.example.user.vg;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.speech.RecognizerIntent;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,7 @@ public class SpeechActivity extends MainActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_speech);
         resultTEXT = (TextView)findViewById(R.id.textresult);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 
     public void OnButtonClick (View v){

@@ -1,6 +1,7 @@
 package com.example.user.vg;
 
 import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.util.Log;
@@ -25,7 +26,7 @@ public class CalculatorActivity extends MainActivity {
         setContentView(R.layout.activity_calculator);
         _screen = (TextView)findViewById(R.id.textView);
         _screen.setText(display);
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 
     private void updateScreen(){
