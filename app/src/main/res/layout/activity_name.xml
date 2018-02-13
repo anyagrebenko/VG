@@ -1,57 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#d3d7db"
+    android:background="#3f51b5"
     >
 
-    <Button
-        android:text="Normal"
-        android:gravity="center"
-        android:layout_width="170dp"
-        android:layout_height="70dp"
-        android:textSize="40dp"
-        android:textStyle="bold"
-        android:textColor="#6b6369"
-        android:background="#d3d7db"
-        android:id="@+id/btngo"
-        android:layout_gravity="center"
-        android:onClick="OnGo"
-        android:layout_marginTop="185dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/btngo2" />
+    <!--<Button-->
+        <!--android:text="Normal"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_width="170dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:textSize="40dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#6b6369"-->
+        <!--android:background="#d3d7db"-->
+        <!--android:id="@+id/btngo"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:onClick="OnGo"-->
+        <!--android:layout_marginTop="185dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignStart="@+id/btngo2" />-->
 
-    <Button
-        android:id="@+id/btngo2"
-        android:gravity="center"
-        android:layout_width="170dp"
-        android:layout_height="70dp"
-        android:textColor="#6b6369"
-        android:background="#d3d7db"
-        android:textStyle="bold"
-        android:onClick="OnBtn"
-        android:text="Voices"
-        android:textSize="40dp"
-        android:layout_marginTop="13dp"
-        android:layout_below="@+id/btngo"
-        android:layout_centerHorizontal="true" />
 
-    <Button
-        android:id="@+id/btngo3"
+    <!--<Button-->
+        <!--android:id="@+id/btngo2"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_width="170dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:textColor="#6b6369"-->
+        <!--android:background="#d3d7db"-->
+        <!--android:textStyle="bold"-->
+        <!--android:onClick="OnBtn"-->
+        <!--android:text="Voices"-->
+        <!--android:textSize="40dp"-->
+        <!--android:layout_below="@+id/imagebtncalc"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="122dp" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btngo3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="#6b6369"-->
+        <!--android:background="#d3d7db"-->
+        <!--android:textStyle="bold"-->
+        <!--android:onClick="OnAbout"-->
+        <!--android:text="About"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_above="@+id/btngo4"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="45dp" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btngo4"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="#6b6369"-->
+        <!--android:background="#d3d7db"-->
+        <!--android:textStyle="bold"-->
+        <!--android:onClick="OnDiscriminant"-->
+        <!--android:text="Discriminant"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignStart="@+id/imagebtncalc"-->
+        <!--android:layout_marginBottom="34dp" />-->
+
+    <ImageButton
+        android:id="@+id/imagebtnabout"
+        android:onClick="OnAbout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="#6b6369"
-        android:background="#d3d7db"
-        android:textStyle="bold"
-        android:onClick="OnAbout"
-        android:text="About"
-        android:textSize="20dp"
-        android:layout_below="@+id/btngo2"
+        app:srcCompat="@drawable/aboutblue"
+        android:layout_marginTop="11dp"
+        android:background="#3f51b5"
+        android:layout_below="@+id/imagebtnvol"
+        android:layout_alignStart="@+id/imagebtnvol" />
+
+    <ImageButton
+        android:id="@+id/imagebtnvol"
+        android:onClick="OnBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/volblue"
+        android:background="#3f51b5"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/imagebtncalc" />
+
+    <ImageButton
+        android:id="@+id/imagebtncalc"
+        android:onClick="OnGo"
+        android:background="#3f51b5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/calcblue"
+        android:layout_above="@+id/imagebtnvol"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="13dp" />
+        android:layout_marginBottom="13dp" />
 
 
 </RelativeLayout>

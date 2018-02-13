@@ -6,16 +6,16 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logvg"
+        android:icon="@drawable/glavnaya"
         android:label="Voice Genesis"
-        android:roundIcon="@drawable/logvg"
+        android:roundIcon="@drawable/glavnaya"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
+            android:configChanges="orientation"
             android:label="Voice Genesis"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:configChanges="orientation">
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,19 +24,19 @@
         </activity>
         <activity
             android:name=".CalculatorActivity"
+            android:configChanges="orientation"
             android:label="Voice Genesis"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:configChanges="orientation"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SpeechActivity"
+            android:configChanges="orientation"
             android:label="Voice Genesis"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:configChanges="orientation"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AboutActivity"
+            android:configChanges="orientation"
             android:label="Voice Genesis"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:configChanges="orientation"/>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

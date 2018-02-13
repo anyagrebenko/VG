@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D3D8DA">
+    android:background="#3f51b5">
 
     <TextView
         android:id="@+id/textresult"
@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="107dp"
         android:textStyle="bold"
-        android:textColor="#6b6369"
+        android:textColor="#d3d8da"
         android:textSize="38dp"
         android:text="@string/emptystr" />
 
@@ -26,6 +26,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="143dp"
+        android:background="#7fd3d8da"
         android:onClick="OnButtonClick"
         app:srcCompat="@drawable/micspeech" />
 
@@ -36,6 +37,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="90dp"
+        android:textColor="#d3d8da"
         android:textSize="20dp"
         android:text="Tap on mic to speak" />
 </RelativeLayout>

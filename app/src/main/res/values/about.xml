@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="textabout">
+        e-mail: a.grebenko@bk.ru \n
+        country: Moscow \n
+        school: №138 \n
+        11 grade \n
+        \n
+        The java programming language \n
+        (Язык программирования java) \n
+        Development environment mobile apps - Android Studio \n
+        (Среда разработки мобильного приложения - Android Studio) \n
+    </string>
+</resources>
