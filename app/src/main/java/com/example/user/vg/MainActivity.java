@@ -61,4 +61,12 @@ public class MainActivity extends AppCompatActivity{
         vibrator.vibrate(70);
     }
 
+    public void OnSquare (View v) {
+        if (v.getId() == R.id.squarebtn){
+            Intent i = new Intent(MainActivity.this, SquareActivity.class);
+            startActivity(i);
+        }
+        Vibrator vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(70);
+    }
 }

@@ -37,6 +37,12 @@
             android:configChanges="orientation"
             android:label="Voice Genesis"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SquareActivity"
+            android:configChanges="orientation"
+            android:label="Voice Genesis"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>
